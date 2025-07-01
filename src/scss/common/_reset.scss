@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -34,14 +35,25 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  display: inline;
+  white-space: nowrap;
 }
 
 button {
+  background: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
+  display: block;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+
+span {
+  display: inline-block;
 }

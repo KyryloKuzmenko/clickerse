@@ -1,18 +1,54 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './home.scss';
+@import './services.scss';
+@import './how-it-works.scss';
+@import './about-us.scss';
+@import './testimonials.scss';
+@import './contact.scss';
+@import './clients.scss';
+@import './why-us.scss';
+@import './cases.scss';
+@import './subscribe.scss';
+@import './remote.scss';
+@import './cookies-modal.scss';
+@import './footer.scss';
+@import './cpt.scss';
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  color: #000;
+}
+
+h1 {
   font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  color: #04015c;
+  @include media(desktop) {
+    font-size: 64px;
+  }
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: #04015c;
+  @include media(desktop) {
+    font-size: 40px;
+  }
 }
