@@ -1,0 +1,104 @@
+.home-content-wrap {
+  padding-top: 136px;
+  background-image: url('../img/mobile/home-bg.png');
+  background-repeat: no-repeat;
+  padding-bottom: 65px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/home-desktop-bg.png');
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+  }
+}
+
+.home-subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: #04015c;
+  margin-top: 12px;
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.home-text {
+  text-align: center;
+  color: #02003c;
+  margin-top: 32px;
+  @include media(desktop) {
+    font-size: 20px;
+    width: 794px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.home-btn-wrap {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.home-discovery {
+  background: linear-gradient(180deg, #583188 0%, #7347cd 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 32px;
+  padding: 16px 24px;
+  width: 274px;
+  height: 54px;
+  color: #fff;
+  @include media(desktop) {
+    width: 346px;
+    height: 67px;
+  }
+}
+.home-services {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 16px 24px;
+  width: 274px;
+  height: 54px;
+  border-radius: 32px;
+
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: #583188;
+  background: transparent;
+  text-decoration: none;
+  z-index: 1;
+  @include media(desktop) {
+    width: 281px;
+    height: 67px;
+  }
+}
+
+.home-services::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+  padding: 2px;
+  background: linear-gradient(180deg, #583188 0%, #7347cd 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
