@@ -1,7 +1,12 @@
-.how-it-works-content-wrap {
+.how-it-works-section .how-it-works-content-wrap {
   padding-bottom: 80px;
   @include media(desktop) {
     padding-bottom: 120px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -20,8 +25,11 @@
   height: 893px;
   margin-top: 40px;
   @include media(desktop) {
-    height: 100%;
+    height: auto;
     flex-direction: column-reverse;
+    margin-top: 113px;
+    margin-bottom: 150px;
+    
   }
 }
 
@@ -29,8 +37,10 @@
   display: flex;
   flex-direction: column;
   gap: 56px;
-    @include media(desktop) {
-        flex-direction: row;
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 0;
+    width: 1200px;
   }
 }
 
@@ -38,7 +48,27 @@
   display: flex;
   flex-direction: column;
   height: 136px;
+  @include media(desktop) {
+    position: relative;
+  }
+}
+
+.hiw-list-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 136px;
   gap: 16px;
+  @include media(desktop) {
+    position: relative;
+    left: 30px;
+  }
+}
+
+.hiw-list-item:nth-child(even) {
+  @include media(desktop) {
+    position: relative;
+    top: 300px;
+  }
 }
 
 .hiw-list-title {
@@ -53,7 +83,6 @@
   color: #010022;
 }
 
-
 // ======================= digits
 
 .hiw-list-digit {
@@ -61,8 +90,12 @@
   flex-direction: column;
 
   align-items: center;
-    @include media(desktop) {
-        flex-direction: row;
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    // padding-left: 125px;
+    // padding-right: 125px;
+     width: 1200px;
   }
 }
 
@@ -70,29 +103,126 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-    @include media(desktop) {
-        flex-direction: row;
+  @include media(desktop) {
+    flex-direction: row;
   }
 }
-.line {
+
+// ===================lines
+
+.vertical-line {
+  @include media(desktop) {
+    position: absolute;
+    top: -40px;
+  }
+}
+
+.vertical-line-1 {
+  @include media(desktop) {
+    margin-left: 40px;
+  }
+}
+
+.hiw-list-text-wrapper-1 {
+  @include media(desktop) {
+    margin-left: 40px;
+    top: -40px;
+    order: 2;
+  }
+}
+
+.vertical-line-2 {
+  @include media(desktop) {
+    height: 207px;
+    top: -50px;
+    left: 15px;
+  }
+}
+
+.hiw-list-text-wrapper-2 {
+  @include media(desktop) {
+    top: 10px;
+    left: 45px;
+  }
+}
+
+.vertical-line-3 {
+  @include media(desktop) {
+    left: 5px;
+  }
+}
+
+.hiw-list-text-wrapper-3 {
+  @include media(desktop) {
+    width: 241px;
+    left: 35px;
+    top: -40px;
+    order: 1;
+  }
+}
+
+.vertical-line-4 {
+  @include media(desktop) {
+    height: 207px;
+    top: -50px;
+    left: -15px;
+  }
+}
+
+.hiw-list-text-wrapper-4 {
+  @include media(desktop) {
+    width: 227px;
+    top: 10px;
+    left: 20px;
+  }
+}
+
+.vertical-line-5 {
+  @include media(desktop) {
+    left: -15px;
+  }
+}
+
+.hiw-list-text-wrapper-5 {
+  @include media(desktop) {
+    top: -40px;
+    left: 15px;
+    width: 253px;
+  }
+}
+
+.hiw-line {
   height: 116px;
   margin-top: 10px;
   margin-bottom: 10px;
-
+  @include media(desktop) {
+    display: none;
+  }
 }
 
 .desktop-hiw-line {
-    display: none;
+  display: none;
+  @include media(desktop) {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-
+.vertical-line {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    width: 116px;
+  }
+}
+// =============== end ==== lines
 .digit-wrap {
   position: relative;
   width: 56px;
   height: 56px;
   display: inline-block;
 }
-
 
 .hiw-number {
   position: absolute;
