@@ -1,0 +1,108 @@
+.how-it-works-content-wrap {
+  padding-bottom: 80px;
+  @include media(desktop) {
+    padding-bottom: 120px;
+  }
+}
+
+.hiw-subtitle {
+  margin-top: 12px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  color: #010022;
+  text-align: center;
+}
+
+.hiw-list-wrapper {
+  display: flex;
+  gap: 52px;
+  height: 893px;
+  margin-top: 40px;
+  @include media(desktop) {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+}
+
+.hiw-list {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+    @include media(desktop) {
+        flex-direction: row;
+  }
+}
+
+.hiw-list-item {
+  display: flex;
+  flex-direction: column;
+  height: 136px;
+  gap: 16px;
+}
+
+.hiw-list-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #04015c;
+}
+
+.hiw-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #010022;
+}
+
+
+// ======================= digits
+
+.hiw-list-digit {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+    @include media(desktop) {
+        flex-direction: row;
+  }
+}
+
+.hiw-list-digit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    @include media(desktop) {
+        flex-direction: row;
+  }
+}
+.line {
+  height: 116px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.desktop-hiw-line {
+    display: none;
+}
+
+
+.digit-wrap {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  display: inline-block;
+}
+
+
+.hiw-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: #010022;
+  line-height: 1;
+  pointer-events: none;
+}
