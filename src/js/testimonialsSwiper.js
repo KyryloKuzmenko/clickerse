@@ -25,10 +25,11 @@ function initReviewsSwiper() {
   }
 
   if (!isMobile && reviewsSwiper) {
-    ourHelpSwiper.destroy(true, true);
-    ourHelpSwiper = null;
+    reviewsSwiper.destroy(true, true);
+    reviewsSwiper = null;
   }
 }
+
 
 window.addEventListener('load', initReviewsSwiper);
 window.addEventListener('resize', initReviewsSwiper);

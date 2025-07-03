@@ -4,6 +4,7 @@
   @include media(desktop) {
     padding-top: 120px;
     padding-bottom: 120px;
+     overflow: hidden;
   }
 }
 
@@ -14,23 +15,48 @@
   font-size: 24px;
   color: #010022;
   text-align: center;
+  @include media(desktop) {
+    font-size: 28px;
+    margin-top: 16px;
+  }
 }
 
 .test-swiper {
   margin-top: 40px;
+  @include media(desktop) {
+    margin-top: 56px;
+    position: relative;
+    left: -120px;
+    width: calc(100% + 240px);
+  }
 }
 
 .test-swiper .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 184px;
+  @include media(desktop) {
+    gap: 10px;
+    height: 160px;
+    max-width: 1440px;
+  }
+}
 
+.swiper-content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #8ba7b8;
   border-radius: 32px;
   padding: 20px 16px;
   width: 343px;
   height: 184px;
   box-sizing: border-box;
+  @include media(desktop) {
+    width: 733px;
+    height: 160px;
+  }
 }
 
 .test-btn-wrap {
@@ -49,21 +75,62 @@
   height: 48px;
 }
 
+.swiper-text {
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
 .test-name {
-    font-weight: 600;
-font-size: 16px;
-color: #010022;
+  font-weight: 600;
+  font-size: 16px;
+  color: #010022;
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }
 
 .position {
-    font-style: italic;
-font-weight: 400;
+  font-style: italic;
+  font-weight: 400;
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }
 
 .test-swiper-wrapper {
-    @include media(desktop) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  @include media(desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+}
+
+.reviews-left-half {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.reviews-left-half,
+.review-full,
+.review-right-half {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    height: 100%;
+  }
+}
+
+.review-right-half {
+  position: relative;
+  right: -3px;
+}
+
+.reviews-left-half {
+  position: relative;
+  left: -3px;
 }
