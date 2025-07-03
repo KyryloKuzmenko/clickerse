@@ -1,0 +1,131 @@
+
+
+.subscribe-content-wrap {
+
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    background-image: url('../img/desktop/subscribe-bg.png');
+    background-repeat: no-repeat;
+    // background-position: center;
+
+    padding-bottom: 120px;
+  }
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  @include media(desktop) {
+    gap: 55px;
+    
+  }
+}
+
+.subscribe-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+    margin-top: 50px;
+
+}
+
+.subscribe-title {
+  font-weight: 400;
+  font-size: 32px;
+  color: #04015c;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 40px;
+    
+    
+  }
+}
+
+.subscribe-subtitle {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  color: #010022;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 28px;
+  }
+}
+
+.subscribe-description {
+
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+//   max-width: 700px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    width: 817px;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 40px;
+  @include media(desktop) {
+    margin-top: 70px;
+  }
+}
+
+.subscribe-input-wrap {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 32px;
+  outline: 1px solid #8ba7b8;
+  display: flex;
+  align-items: center;
+
+  @include media(desktop) {
+    width: 400px;
+  }
+}
+
+.subscribe-input {
+
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #010022;
+  background-color: transparent;
+
+  &::placeholder {
+    color: #8ba7b8;
+  }
+}
+
+.subscribe-button {
+  padding: 16px 24px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #583188 0%, #7347cd 100%);
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

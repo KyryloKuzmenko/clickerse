@@ -1,0 +1,81 @@
+.remote-content-wrap {
+
+  padding-bottom: 80px;
+  @include media(desktop) {
+    // position: relative;
+
+    padding-bottom: 120px;
+  }
+}
+
+.remote-wrapper {
+  @include media(desktop) {
+    position: relative;
+    height: 650px;
+    width: 100%;
+  }
+}
+
+.remote-card {
+  @include media(desktop) {
+    border: 1px solid #8ba7b8;
+    border-radius: 32px;
+    padding: 40px;
+    width: 772px;
+    height: 337px;
+    background: #f1f2ff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    margin-top: 170px;
+  }
+}
+
+.remote-subtitle {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #010022;
+  margin-top: 12px;
+  @include media(desktop) {
+    font-size: 28px;
+    margin-top: 16px;
+  }
+}
+
+.remote-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #010022;
+  margin-top: 40px;
+  @include media(desktop) {
+    font-size: 20px;
+    margin-top: 45px;
+  }
+}
+
+.remote-desktop-1,
+.remote-desktop-2 {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.remote-desktop-1 {
+  position: absolute;
+  z-index: 1;
+}
+
+.remote-desktop-2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+
+.remote-desktop-1 {
+  position: absolute;
+}

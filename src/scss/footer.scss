@@ -1,0 +1,129 @@
+.footer-content {
+  
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "rights socials"
+      "links links";
+    column-gap: 32px;
+    row-gap: 32px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.footer-social-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+
+  @include media(desktop) {
+    
+    grid-area: socials;
+    justify-self: end;
+    align-self: center;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-follow-label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #010022;
+}
+
+.footer-icon {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.footer-contact {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #010022;
+  text-align: center;
+}
+
+.footer-email {
+  color: #010022;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.footer-rights {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #010022;
+  text-align: center;
+
+  @include media(desktop) {
+    grid-area: rights;
+    text-align: left;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @include media(desktop) {
+    grid-area: links;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+.footer-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #010022;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+
+   
+
+}
+
+
+br {
+    @include media(desktop) {
+        display: none;
+    }
+}

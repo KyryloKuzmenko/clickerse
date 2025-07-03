@@ -110,6 +110,12 @@
   font-weight: 400;
   font-size: 16px;
   color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
 }
 
 .header-services {

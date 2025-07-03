@@ -1,0 +1,152 @@
+.contact-content-wrap {
+  background-image: url('../img/mobile/contact-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/contact-bg-desktop.png');
+  }
+}
+
+
+
+.contact-content-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+
+  @include media(desktop) {
+    max-width: 492px;
+    gap: 32px;
+  }
+}
+
+.contact-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    gap: 16px;
+  }
+}
+
+.contact-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.contact-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 28px;
+  }
+}
+
+.contact-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    gap: 20px;
+  }
+}
+
+.contact-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.contact-email {
+  color: #ffffff;
+
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    gap: 24px;
+  }
+}
+
+.twit,
+.linkedin {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @include media(desktop) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.contact-tags {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.44);
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.contact-company {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
